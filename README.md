@@ -8,7 +8,7 @@ However, changing what we are doing on the Python side shouldn't affect things o
 
 To run the project, first select a scenario from Waymo Open Dataset by running:
 ```
-uv run find_sim.py
+uv run find_scenario.py
 ```
 Once you have selected a scenario, run the simulator (with a Julia controller) with:
 ```
