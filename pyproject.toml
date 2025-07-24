@@ -1,0 +1,18 @@
+[project]
+name = "julia-from-python"
+version = "0.1.0"
+description = "Guide to using Julia from Python"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dataclasses>=0.8",
+    "jax>=0.7.0",
+    "juliacall>=0.9.26",
+    "matplotlib>=3.10.3",
+    "mediapy>=1.2.4",
+    "tqdm>=4.67.1",
+    "waymo-waymax",
+]
+
+[tool.uv.sources]
+waymo-waymax = { git = "https://github.com/waymo-research/waymax.git", rev = "main" }
