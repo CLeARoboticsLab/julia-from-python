@@ -6,7 +6,11 @@ We will use the python library [JuliaCall](https://juliapy.github.io/PythonCall.
 This project came out of an older project in which we used the [Waymax](https://github.com/waymo-research/waymax) Python library as a simulator to use a [planner made in Julia](https://github.com/cadearmstrxng/InverseGameDiscountFactor.jl), and thus includes a guide to using Waymax from the Python side.
 However, changing what we are doing on the Python side shouldn't affect things on the Julia side of things, with a few caveats :).
 
-You can run this project by using:
+To run the project, first select a scenario from Waymo Open Dataset by running:
+```
+uv run find_sim.py
+```
+Once you have selected a scenario, run the simulator (with a Julia controller) with:
 ```
 uv run run_sim.py
 ```
